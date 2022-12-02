@@ -21,7 +21,7 @@
     let body = document.body;
     let images = [...Array(27).keys()].map(
       (person) =>
-        `<figure><img width="350" src="/img/${person}.jpg" /><figcaption>/img/${person}.jpg</figcaption></figure>`
+        `<figure><img width="350" src="/guayerd-project-images/img/${person}.jpg" /><figcaption>/img/${person}.jpg</figcaption></figure>`
     );
     body.innerHTML = images.join().replaceAll(",", "");
   </script>
