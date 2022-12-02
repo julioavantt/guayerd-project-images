@@ -31,10 +31,9 @@
       (person) =>
         `<figure><img width="350" src="/guayerd-project-images/img/${person}.jpg" /><figcaption>Número de la foto: ${person}</figcaption></figure>`
     );
-    let array = [...Array(27).keys()].map((person) => `<code></code>`);
 
     body.innerHTML = images.join().replaceAll(",", "");
 
-    body.innerHTML = `<h1>https://julioavantt.github.io/guayerd-project-images/img/<mark>14</mark>.jpg</h1><h2>El número subrayado debe ser una variable dentro de un ciclo.</h2>`;
+    body.innerHTML += `<h1>https://julioavantt.github.io/guayerd-project-images/img/<mark>14</mark>.jpg</h1><h2>El número subrayado debe ser una variable dentro de un ciclo.</h2>`;
   </script>
 </html>
