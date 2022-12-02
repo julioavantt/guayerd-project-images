@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        font-family: monospace;
+      }
       body {
         display: flex;
         flex-wrap: wrap;
@@ -14,6 +17,11 @@
       figure {
         margin: 1rem 0;
       }
+      h1,
+      h2 {
+        width: 100%;
+        margin: 5px;
+      }
     </style>
   </head>
   <body></body>
@@ -21,12 +29,12 @@
     let body = document.body;
     let images = [...Array(27).keys()].map(
       (person) =>
-        `<figure><img width="350" src="/guayerd-project-images/img/${person}.jpg" /></figure>`
+        `<figure><img width="350" src="/guayerd-project-images/img/${person}.jpg" /><figcaption>Número de la foto: ${person}</figcaption></figure>`
     );
     let array = [...Array(27).keys()].map((person) => `<code></code>`);
 
     body.innerHTML = images.join().replaceAll(",", "");
 
-    body.innerHTML = `<h1>https://julioavantt.github.io/guayerd-project-images/img/<b>14</b>.jpg</h1>`;
+    body.innerHTML = `<h1>https://julioavantt.github.io/guayerd-project-images/img/<mark>14</mark>.jpg</h1><h2>El número subrayado debe ser una variable dentro de un ciclo.</h2>`;
   </script>
 </html>
